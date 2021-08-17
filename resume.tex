@@ -1,0 +1,155 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{1pt}}
+  }
+}
+
+% - {title}: {content}
+\newcommand{\resumeItemTitled}[2]{
+  \item\small\textbf{#1}{\small: #2 \vspace{-2pt}}
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2}
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Yohan Lee}} & \href{mailto:io.yohanlee@gmail.com}{io.yohanlee@gmail.com}\\
+  \textbf{{Full Stack Software Engineer}} & 347-522-6583 \\
+  & Brooklyn, New York
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {DataCulture - Freelance}{Software Engineer, Jan 2020 - June 2020}
+    \resumeItemListStart
+      \resumeItem{Built an interactive data visualization app from ground up for a venture capital firm. Provided data insight that told stories about the state of startup industry.}
+      \resumeItem{Implemented data visualization using Victory js, React, Testing, Authentication, and CI/CD.}
+      \resumeItem{Worked closely with the client and took the project from an idea to a finished product.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Contracts Team - WeWork}{Software Engineer L4, Aug 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{Led a team to migrate the core of sales engine in a React app from a deprecated data management library to Redux. Assessed risks, made a plan of execution, and ensured and minimal disruptions to end users with canary deployment, and frequent communication to users and stakeholders.}
+        \resumeItem{Fixed an unrelenting database performance issue in a mission critical, multi-tenant application that caused many outages and cascading failures. The problem couldn’t be resolved by several senior and principal engineers. Proposed a number of potential solutions and executed the option with the best performance metrics and ease of maintainability. Brought down timing out queries to under 100ms.}
+        \resumeItem{Mentored junior engineers with extensive pairing, providing technical knowledge and business context, and ensuring they were unblocked and set up for success.}
+        \resumeItem{Scaled and optimized microservices to address the demands of hyper growth business and the tech debt that accrued over time in a fast moving, scrappy environment. Made mission critical systems more robust and resilient to outages.}
+        \resumeItem{Advocated for my team and showcased how our work affects the business to the larger org by collecting metrics and building dashboards to visualize the impact.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Enterprise Team - WeWork}{Software Engineer L3, Aug 2017 - Aug 2018}
+      \resumeItemListStart
+        \resumeItem{Automated sales pipeline to capture a source of revenue that involved lots of manual work and coordination by different departments.  This improved traceability and data accuracy, removing large overhead and clunky processes.}
+        \resumeItem{Developed a solution to process custom contracts for enterprise companies to capture large deals with complex terms. Created robust workflows handle large workloads. This was important for business growth because the enterprise member base grew quickly, jumping from 0 to 40\% of revenue in 2 years.}
+        \resumeItem{Built sales tool to pre-sell spaces in new buildings to large companies and reduced the time and effort it takes to get to full occupancy.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Contracts Team - WeWork}{Software Engineer L2, Sep 2016 - Aug 2017}
+      \resumeItemListStart
+        \resumeItem{Re-architected the contracts system which previously had high error rate and required lots of manual intervention and faced scaling issues. Made data driven decision to strategize the rollout and successfully migrated things over. Reduced error rate from 5\% to sub 0.1\%.}
+        \resumeItem{Built features to support internationalization and localization effort to make market launches easier and scalable, helping to bring WeWork to EMEA, APAC, and LATAM regions, and 42 different countries.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Billing Team - WeWork}{Software Engineer L1, Oct 2015 - Sep 2016}
+      \resumeItemListStart
+        \resumeItem{Created a tool to manage promotions in React and Rails to drive new member acquisitions. Modeled the data to track promotions usage and performance.}
+        \resumeItem{Worked on payment integration with different vendors to be able to configure buildings with banks and payment processors and collect revenue.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeItemTitled{Full Stack}{Backend, Frontend, Data Visualization, Performance Optimization }
+    \resumeItemTitled{Languages}{Ruby, JavaScript, TypeScript, Go, SQL }
+    \resumeItemTitled{Technologies}{Ruby on Rails, Postgresql, Redis, AMQP, Temporal, Docker, Kubernetes, Elasticsearch, Algolia, Snowflake, Redshift, AWS, Heroku, Netlify, CI/CD, E2E Testing, React, Node, Jquery, Jira, Git}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
